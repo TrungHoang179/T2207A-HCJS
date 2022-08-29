@@ -1,0 +1,16 @@
+h1{
+    color: #ff0000;
+}
+p{
+    color: #008000;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 100;/* 100 300 400 500 600 700 800 900 */
+    line-height: 18px;
+    text-decoration: underline;/* underline line-through overline none */
+    text-align: center;/* left right center justify */
+    text-transform: uppercase; /* uppercase lowercase capitalize none */
+    font-style: italic;
+    background-color: bisque;
+    width: 500px;
+}
