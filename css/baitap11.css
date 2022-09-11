@@ -1,0 +1,49 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: green;
+    color: #fafafa;
+    line-height: 3.0;
+    font-size: 30px;
+    padding-left: 10px;
+    width: 30%;
+}
+div{
+    width: 30%;
+    margin: 10px 10px;
+}
+
+label{
+    display: block;
+    margin-top: 40px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+input[name=fname]{
+    width: 40%;
+    height: 40px;
+}
+
+input[name=email], input[name=num]{
+    width: 81%;
+    height: 40px;
+}
+
+button{
+    margin-top: 40px;
+    line-height: 2.0;
+    width: 30%;
+    font-size: 20px;
+}
+::placeholder{
+    font-size: 16px;
+
+}
+
+
