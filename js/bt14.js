@@ -15,5 +15,8 @@ function countdown1() {
         clearInterval(as);
     }
 }
-var as = setInterval(countdown1,1000);
+function countdown2() {
+    var as = setInterval(countdown1, 1000);
+}
+
 
