@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Food</title>
+    <link rel="stylesheet" href="css/bt20.css"/>
+</head>
+<body>
+<h1>Today's Special</h1>
+<div id="menu"></div>
+<script type="text/javascript">
+    function getmenu(){
+        var xhttp = new XMLHttpRequest();
+        xhttp.onload = function(){
+            var data = JSON.parse(this.responseText);
+            var a = data.data;
+            for (var i=0; i<a.length; i++){
+                var div_html = `<div><img src="${a[i].image}"/>${a[i].name} ${a[i].price}</div>`
+                var menu = document.getElementById("menu");
+                menu.innerHTML += div_html;
+            }
+        }
+        var url = " https://foodgroup.herokuapp.com/api/today-special"
+        xhttp.open("GET", url, true);
+        xhttp.send();
+    }
+    getmenu();
+</script>
+</body>
+</html>
