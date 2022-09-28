@@ -1,0 +1,25 @@
+.section{
+    width: 30%;
+    margin-left: 100px;
+}
+button{
+    float: right;
+    size: 50px;
+}
+.section header{
+    width: 30%;
+}
+.login{
+    width: 50%;
+    padding: 10px 15px;
+    float: left;
+    text-align: center;
+}
+.register{
+    width: 50%;
+    padding: 10px 15px;
+    float: left;
+    text-align: center;
+    background-color: gray;
+    color: white;
+}
